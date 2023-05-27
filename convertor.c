@@ -19,7 +19,7 @@ char *convert(unsigned long int num, int base, int lowercase)
 	p = &buf[49];
 	*p = '\0';
 	do {
-		*--p = rep[num % base];
+		*--p = rp[num % base];
 		num /= base;
 	} while (num != 0);
 
