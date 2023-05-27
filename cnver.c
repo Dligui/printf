@@ -3,7 +3,7 @@
 /**
  * convert - conver function by sara and ghizlane
  * @num: input numero
- * @base: input basice 
+ * @base: input bace HHHHHHHHH
  * @lowercase: hexa flag for this function hhhhhhhhhhhh
  * Return: maso9akch a betty
  */
@@ -19,7 +19,7 @@ char *convert(unsigned long int num, int base, int lowercase)
 	p = &buf[49];
 	*p = '\0';
 	do {
-		*--p = rp[num % base];
+		*--p = rep[num % base];
 		num /= base;
 	} while (num != 0);
 
