@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * convert - converts kanbdlou numero l string
- * @nm: input numero
- * @bs: input bsae
- * @lw: flag hexadi values khassaha twli  lowercas
- * Return: maso9akch fya ms string
+ * convert - converts number and base into string
+ * @num: input number
+ * @base: input base
+ * @lowercase: flag if hexa values need to be lowercase
+ * Return: result string
  */
-char *convert(unsigned long int nm, int bs, int lw)
+char *convert(unsigned long int num, int base, int lowercase)
 {
-	static char *rp;
-	static char buf[50];
-	char *p;
+	static char *rep;
+	static char buffer[50];
+	char *ptr;
 
-	rp = (lw)
+	rep = (lowercase)
 		? "0123456789abcdef"
 		: "0123456789ABCDEF";
-	p = &buf[49];
-	*p = '\0';
+	ptr = &buffer[49];
+	*ptr = '\0';
 	do {
-		*--p = rp[nm % bs];
-		nm /= bs;
-	} while (nm != 0);
+		*--ptr = rep[num % base];
+		num /= base;
+	} while (num != 0);
 
-	return (p);
+	return (ptr);
 }

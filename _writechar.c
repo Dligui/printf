@@ -2,41 +2,41 @@
 #include <unistd.h>
 
 /**
- * _putchar - KKANKATBO CARATCAIRE F SODOUT
- * @c: CARACHTER GHDI TPRANTA
- * Return: MASO9AKCH
- * hit sowa ghadi raja3 1 wla -1 ila kan chi mchkile w safe
- * Description: _putchar owner by sara yamil w ghizlane dilgui
- * cap cap cal cal
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ * Description: _putchar uses a local buffer of 1024 to call write
+ * as little as possible
  */
 int _putchar(char c)
 {
 	static char buf[1024];
-	static int j;
+	static int i;
 
-	if (c == -1 || j >= 1024)
+	if (c == -1 || i >= 1024)
 	{
-		write(1, &buf, j);
-		j = 0;
+		write(1, &buf, i);
+		i = 0;
 	}
 	if (c != -1)
 	{
-		buf[j] = c;
-		j++;
+		buf[i] = c;
+		i++;
 	}
 	return (1);
 }
 
 /**
- * _puts - kiparnti lina string w safe
- * @str: pointer ta3 string li atprnta
- * Return: nmaso9akch a sidi
+ * _puts - prints a string to stdout
+ * @str: pointer to the string to print
+ * Return: number of chars written
  */
 int _puts(char *str)
 {
-	register int j;
+	register int i;
 
-	for (j = 0; str[j] != '\0'; j++)
-		_putchar(str[j]);
-	return (j);
+	for (i = 0; str[i] != '\0'; i++)
+		_putchar(str[i]);
+	return (i);
 }
