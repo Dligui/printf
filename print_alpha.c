@@ -3,7 +3,7 @@
 /**
  * print_string - affiche string
  * @l: list
- * @f: pointeur 
+ * @f: pointeur hhhhhhhhh
  * Return: number of char printed
  */
 
@@ -20,8 +20,8 @@ int print_string(va_list l, flags_t *f)
 
 /**
  * print_char - affichi  a character
- * @l: lista 
- * @f: pointurr 
+ * @l: lista hhhhhhhhh
+ * @f: pointurr hhhhhhhhhhhh
  * Return: number of charest afichi
  */
 

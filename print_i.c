@@ -2,7 +2,7 @@
 
 /**
  * print_int -afficher int
- * @l: ma liste 
+ * @l: ma liste hhhhhhhhh
  * @f: pointeur
  * Return: int of char printed
  */
@@ -24,7 +24,7 @@ int print_int(va_list l, flags_t *f)
 /**
  * print_unsigned - affiche unsigned number
  * @l:  ma liste
- * @f: pointeur 
+ * @f: pointeur hhhhhhhhhh
  * Return: int  of char printed
  */
 int print_unsigned(va_list l, flags_t *f)
@@ -55,7 +55,7 @@ void print_number(int m)
 
 	if (d / 10)
 		print_number(d / 10);
-	_putchar((d% 10) + '0');
+	   _putchar((d % 10) + '0');
 }
 
 /**

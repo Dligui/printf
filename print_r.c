@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_bigS-just afficher lya  
+ * print_bigS-just afficher lya hhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhh
  * (0 < ASCII value < 32 or >= 127) are
  * printed this way: \x, followed by the ASCII code
  * value in hexadecimal (upper case - always 2 characters)
  * @l: va_list arguments from _printf
  * @f: pointer to the struct flags that determines
- * Return: int
+ * Return: int hhhhhhhhhhhhhhhhh
  */
 int print_bigS(va_list l, flags_t *f)
 {
@@ -63,7 +63,7 @@ int print_rev(va_list l, flags_t *f)
 
 /**
  * print_rot13 - print
- * @l: list of arguments 
+ * @l: list of arguments jjjjjjjjjjjjjjjjjjjj
  * @f: pointer to the struct flags that determines
  * Return: length of the printed string
  */
@@ -95,7 +95,7 @@ int print_rot13(va_list l, flags_t *f)
 
 /**
  * print_percent -aff  a percent
- * @l: va_list arguments 
+ * @l: va_list arguments hhhhhhhhhhhhhhhh
  * @f: pointer to the struct flags in which we turn the flags on
  * Return: number of char printed
  */

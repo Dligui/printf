@@ -41,9 +41,9 @@ int print_hex_big(va_list l, flags_t *f)
 
 /**
  * print_binary - affiche  a number in base 2
- * @l: va_lista 
- * @f: pointeur
- * Return: int 
+ * @l: va_lista hhhhhhh 
+ * @f: pointeur hhhhhhh
+ * Return: int hhhhhhhh
  */
 
 int print_binary(va_list l, flags_t *f)
@@ -59,7 +59,7 @@ int print_binary(va_list l, flags_t *f)
  * print_octal - affichi  number in base 8
  * @l: va_lista
  * @f: pointeur
- * Return: int  
+ * Return: int Maso9ach
  */
 int print_octal(va_list l, flags_t *f)
 {
