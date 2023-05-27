@@ -1,28 +1,28 @@
 #include "main.h"
 /**
- * get_flag - turnson flagss ila _printf findss
- * @c: char holder to falgs in get flag
- * @f: pointer f li kandiroh f had fonction get flag hhhhh
+ * get_flag - turns on flags if _printf finds
+ * @s: character that holds the flag specifier
+ * @f: pointer to the struct flags in which we turn the flags on
  *
- * Return: maso9ich hadchi fchkel w nta katZid 3lya a khay hhhh
+ * Return: 1 if a flag has been turned on, 0 otherwise
  */
-int get_flag(char c, flags_t *f)
+int get_flag(char s, flags_t *f)
 {
-int j = 0;
-switch (c)
+int i = 0;
+switch (s)
 {
 case '+':
 f->plus = 1;
-j = 1;
+i = 1;
 break;
 case ' ':
 f->space = 1;
-j = 1;
+i = 1;
 break;
 case '#':
 f->hash = 1;
-j = 1;
+i = 1;
 break;
 }
-return (j);
+return (i);
 }

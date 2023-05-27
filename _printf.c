@@ -1,43 +1,43 @@
 #include "main.h"
 /**
- * _printf - task lwala ta3 printf
- * @format: cntante inpute pointer
- * Return: maso9akch
+ * _printf - printf function
+ * @format: const char pointer
+ * Return: b_len
  */
 int _printf(const char *format, ...)
 {
 	int (*pfunc)(va_list, flags_t *);
-	const char *j;
-	va_list arg;
-	flags_t flg = {0, 0, 0};
+	const char *p;
+	va_list arguments;
+	flags_t flags = {0, 0, 0};
 
-	register int cnt = 0;
+	register int count = 0;
 
-	va_start(arg, format);
+	va_start(arguments, format);
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
 		return (-1);
-	for (j = format; *j; j++)
+	for (p = format; *p; p++)
 	{
-		if (*j == '%')
+		if (*p == '%')
 		{
-			j++;
-			if (*j == '%')
+			p++;
+			if (*p == '%')
 			{
-				cnt += _putchar('%');
+				count += _putchar('%');
 				continue;
 			}
-			while (get_flag(*j, &flg))
-				j++;
-			pfunc = get_print(*j);
-			cnt += (pfunc)
-				? pfunc(arg, &flg)
-				: _printf("%%%c", *j);
+			while (get_flag(*p, &flags))
+				p++;
+			pfunc = get_print(*p);
+			count += (pfunc)
+				? pfunc(arguments, &flags)
+				: _printf("%%%c", *p);
 		} else
-			cnt += _putchar(*j);
+			count += _putchar(*p);
 	}
 	_putchar(-1);
-	va_end(arg);
-	return (cnt);
+	va_end(arguments);
+	return (count);
 }
