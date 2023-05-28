@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * get_print - get hhhhh hhhhh hhhhh hhhh print hhhhhhhhhhhh
+ * gt_print - get hhhhh hhhhh hhhhh hhhh print hhhhhhhhhhhh
  * @s: character that holds hhhhhhhhh hhhhhh hh
  * Description: function loop b case system
  * Return: maso9akch a hhh zzzz zzzz zzzz zzzzzzzz
  */
-int (*get_print(char s))(va_list, flags_t *)
+int (*gt_print(char s))(va_list, flags_t *)
 {
 	ph func_arr[] = {
 		{'i', print_int},
