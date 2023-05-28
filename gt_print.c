@@ -21,7 +21,7 @@ int (*gt_print(char s))(va_list, flags_t *)
 		{'R', print_rot13},
 		{'r', print_rev},
 		{'S', print_bigS},
-		{'p', print_address},
+		{'p', print_adress},
 		{'%', print_percent}
 		};
 	int flg = 14;
