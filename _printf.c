@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 			}
 			while (gt_flag(*p, &flg))
 				p++;
-			pfunc = get_print(*p);
+			pfunc = gt_print(*p);
 			cnt += (pfunc)
 				? pfunc(arg, &flg)
 				: _printf("%%%c", *p);
