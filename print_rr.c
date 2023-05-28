@@ -26,7 +26,7 @@ int print_bigS(va_list l, flags_t *f)
 		{
 			_puts("\\x");
 			cnt += 2;
-			rs = convert(s[i], 16, 0);
+			rs = cnvert(s[i], 16, 0);
 			if (!rs[1])
 				cnt += _putchar('0');
 			cnt += _puts(rs);

@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * convert - conver function by sara and ghizlane
+ * cnvert - conver function by sara and ghizlane
  * @num: input numero
  * @base: input bace HHHHHHHHH
  * @lowercase: hexa flag for this function hhhhhhhhhhhh
  * Return: maso9akch a betty
  */
-char *convert(unsigned long int num, int base, int lowercase)
+char *cnvert(unsigned long int num, int base, int lowercase)
 {
 	static char *rp;
 	static char buf[50];

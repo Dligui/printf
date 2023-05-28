@@ -12,7 +12,7 @@
 int print_hex(va_list l, flags_t *f)
 {
 	unsigned int nm = va_arg(l, unsigned int);
-	char *st = convert(nm, 16, 1);
+	char *st = cnvert(nm, 16, 1);
 	int cnt = 0;
 
 	if (f->hash == 1 && st[0] != '0')
@@ -34,7 +34,7 @@ int print_hex(va_list l, flags_t *f)
 int print_hex_big(va_list l, flags_t *f)
 {
 	unsigned int nm = va_arg(l, unsigned int);
-	char *st = convert(nm, 16, 0);
+	char *st = cnvert(nm, 16, 0);
 	int cnt = 0;
 
 	if (f->hash == 1 && st[0] != '0')
@@ -55,7 +55,7 @@ int print_hex_big(va_list l, flags_t *f)
 int print_binary(va_list l, flags_t *f)
 {
 	unsigned int nm = va_arg(l, unsigned int);
-	char *st = convert(nm, 2, 0);
+	char *st = cnvert(nm, 2, 0);
 
 	(void)f;
 	return (_puts(st));
@@ -73,7 +73,7 @@ int print_binary(va_list l, flags_t *f)
 int print_octal(va_list l, flags_t *f)
 {
 	unsigned int nm = va_arg(l, unsigned int);
-	char *st = convert(nm, 8, 0);
+	char *st = cnvert(nm, 8, 0);
 	int cnt = 0;
 
 	if (f->hash == 1 && st[0] != '0')

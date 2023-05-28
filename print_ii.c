@@ -32,7 +32,7 @@ int print_int(va_list l, flags_t *f)
 int print_unsigned(va_list l, flags_t *f)
 {
 	unsigned int u = va_arg(l, unsigned int);
-	char *st = convert(u, 10, 0);
+	char *st = cnvert(u, 10, 0);
 
 	(void)f;
 	return (_puts(st));
