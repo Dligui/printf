@@ -28,10 +28,10 @@ typedef struct printHandler
 	char c;
 	int (*f)(va_list ap, flags_t *f);
 } ph;
-int print_int(va_list l, flags_t *f);
-void print_number(int n);
-int print_unsigned(va_list l, flags_t *f);
-int count_digit(int i);
+int print_iint(va_list l, flags_t *f);
+void priint_number(int n);
+int print_unsiigned(va_list l, flags_t *f);
+int count_diigit(int i);
 int print_hex(va_list l, flags_t *f);
 int print_hex_big(va_list l, flags_t *f);
 int print_bnary(va_list l, flags_t *f);
