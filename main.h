@@ -47,6 +47,6 @@ int _puts(char *str);
 int print_rot13(va_list l, flags_t *f);
 int print_rev(va_list l, flags_t *f);
 int print_bigS(va_list l, flags_t *f);
-int print_address(va_list l, flags_t *f);
+int print_adress(va_list l, flags_t *f);
 int print_percent(va_list l, flags_t *f);
 #endif
