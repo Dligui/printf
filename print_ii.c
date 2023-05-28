@@ -18,7 +18,7 @@ int print_iint(va_list l, flags_t *f)
 		rs += _putchar('+');
 	if (n <= 0)
 		rs++;
-	print_number(n);
+	priint_number(n);
 	return (rs);
 }
 
@@ -56,7 +56,7 @@ void priint_number(int n)
 		n1 = n;
 
 	if (n1 / 10)
-		print_number(n1 / 10);
+		priint_number(n1 / 10);
 	_putchar((n1 % 10) + '0');
 }
 
