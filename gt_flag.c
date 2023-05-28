@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * get_flag - flag function get function hhh
+ * gt_flag - flag function get function hhh
  * @s: character hhhhhhhhhh hhhhhhhhh h  hhhhhhhhh h
  * @f: pointer hhhh bbbbb zzzz hhhhh kkkkk jjjj jjjjj
  * Return: maso9akch fya hhhhh bbbbb kkimba hhhh jjjjjjjj
  */
-int get_flag(char s, flags_t *f)
+int gt_flag(char s, flags_t *f)
 {
 int j = 0;
 switch (s)
