@@ -1,29 +1,28 @@
 #include "main.h"
-
 /**
- * print_hex - prints a number in hexadecimal base,
+ * print_hex -je ss pas exactement qu est ce qu il fait
  * in lowercase
- * @l: va_list arguments from _printf
+ * @l: va_list des parametres de _printf
  * @f: pointer to the struct flags that determines
  * if a flag is passed to _printf
- * Description: the function calls convert() which in turns converts the input
+ * Description: the function calls cnvrt() which in turns converts the input
  * number into the correct base and returns it as a string
- * Return: the number of char printed
+ * Return: le nombre of char printii
  */
 int print_hex(va_list l, flags_t *f)
 {
-	unsigned int num = va_arg(l, unsigned int);
-	char *str = convert(num, 16, 1);
-	int count = 0;
+	unsigned int nm = va_arg(l, unsigned int);
+	char *st = convert(nm, 16, 1);
+	int cnt = 0;
 
-	if (f->hash == 1 && str[0] != '0')
-		count += _puts("0x");
-	count += _puts(str);
-	return (count);
+	if (f->hash == 1 && st[0] != '0')
+		cnt += _puts("0x");
+	cnt += _puts(st);
+	return (cnt);
 }
 
 /**
- * print_hex_big - prints a number in hexadecimal base,
+ * print_hex_big - printi le nombre en hexadecimal base,
  * in uppercase
  * @l: va_list arguments from _printf
  * @f: pointer to the struct that determines
@@ -34,36 +33,36 @@ int print_hex(va_list l, flags_t *f)
  */
 int print_hex_big(va_list l, flags_t *f)
 {
-	unsigned int num = va_arg(l, unsigned int);
-	char *str = convert(num, 16, 0);
-	int count = 0;
+	unsigned int nm = va_arg(l, unsigned int);
+	char *st = convert(nm, 16, 0);
+	int cnt = 0;
 
-	if (f->hash == 1 && str[0] != '0')
-		count += _puts("0X");
-	count += _puts(str);
-	return (count);
+	if (f->hash == 1 && st[0] != '0')
+		cnt += _puts("0X");
+	cnt += _puts(st);
+	return (cnt);
 }
 
 /**
- * print_binary - prints a number in base 2
+ * print_binary - printi le nomnre dans la base 2
  * @l: va_list arguments from _printf
  * @f: pointer to the struct that determines
  * if a flag is passed to _printf
  * Description: the function calls convert() which in turns converts the input
  * number into the correct base and returns it as a string
- * Return: the number of char printed
+ * Return: le nombre de caract est affiché
  */
 int print_binary(va_list l, flags_t *f)
 {
-	unsigned int num = va_arg(l, unsigned int);
-	char *str = convert(num, 2, 0);
+	unsigned int nm = va_arg(l, unsigned int);
+	char *st = convert(nm, 2, 0);
 
 	(void)f;
-	return (_puts(str));
+	return (_puts(st));
 }
 
 /**
- * print_octal - prints a number in base 8
+ * print_octal - printi le nombre dans base octale 8
  * @l: va_list arguments from _printf
  * @f: pointer to the struct that determines
  * if a flag is passed to _printf
@@ -73,12 +72,12 @@ int print_binary(va_list l, flags_t *f)
  */
 int print_octal(va_list l, flags_t *f)
 {
-	unsigned int num = va_arg(l, unsigned int);
-	char *str = convert(num, 8, 0);
-	int count = 0;
+	unsigned int nm = va_arg(l, unsigned int);
+	char *st = convert(nm, 8, 0);
+	int cnt = 0;
 
-	if (f->hash == 1 && str[0] != '0')
-		count += _putchar('0');
-	count += _puts(str);
-	return (count);
+	if (f->hash == 1 && st[0] != '0')
+		cnt += _putchar('0');
+	cnt += _puts(st);
+	return (cnt);
 }
