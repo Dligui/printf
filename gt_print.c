@@ -28,7 +28,7 @@ int (*get_print(char s))(va_list, flags_t *)
 
 	register int j;
 
-	for (j = 0; j < flags; j++)
+	for (j = 0; j < flg; j++)
 		if (func_arr[j].c == s)
 			return (func_arr[j].f);
 	return (NULL);
