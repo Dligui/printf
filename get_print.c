@@ -1,9 +1,14 @@
 #include "main.h"
 
 /**
- * get_print - function get print for print pointer hhhhhhhhh HHHHHHHHHHHH
- * @s: character hold argmnt for this function
- * Return: maso9kach wakha atraj3 lina pointer ms mashoglach
+ * get_print - selects the right printing function
+ * depending on the conversion specifier passed to _printf
+ * @s: character that holds the conversion specifier
+ * Description: the function loops through the structs array
+ * func_arr[] to find a match between the specifier passed to _printf
+ * and the first element of the struct, and then the approriate
+ * printing function
+ * Return: a pointer to the matching printing function
  */
 int (*get_print(char s))(va_list, flags_t *)
 {
@@ -23,12 +28,12 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'p', print_address},
 		{'%', print_percent}
 		};
-	int flg = 14;
+	int flags = 14;
 
-	register int j;
+	register int i;
 
-	for (j = 0; i < flg; j++)
+	for (i = 0; i < flags; i++)
 		if (func_arr[i].c == s)
-			return (func_arr[j].f);
+			return (func_arr[i].f);
 	return (NULL);
 }
