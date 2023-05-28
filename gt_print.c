@@ -10,7 +10,7 @@ int (*gt_print(char s))(va_list, flags_t *)
 {
 	ph func_arr[] = {
 		{'i', print_int},
-		{'s', print_string},
+		{'s', print_strng},
 		{'c', print_char},
 		{'d', print_int},
 		{'u', print_unsigned},

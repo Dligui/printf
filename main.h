@@ -40,7 +40,7 @@ char *cnvert(unsigned long int num, int base, int lowercase);
 int _printf(const char *format, ...);
 int (*gt_print(char s))(va_list, flags_t *);
 int gt_flag(char s, flags_t *f);
-int print_string(va_list l, flags_t *f);
+int print_strng(va_list l, flags_t *f);
 int print_char(va_list l, flags_t *f);
 int _putchar(char c);
 int _puts(char *str);
