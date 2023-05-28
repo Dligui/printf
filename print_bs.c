@@ -44,7 +44,7 @@ int print_hex_big(va_list l, flags_t *f)
 }
 
 /**
- * print_binary - printi le nomnre dans la base 2
+ * print_bnary - printi le nomnre dans la base 2
  * @l: va_list arguments from _printf
  * @f: pointer to the struct that determines
  * if a flag is passed to _printf
@@ -52,7 +52,7 @@ int print_hex_big(va_list l, flags_t *f)
  * number into the correct base and returns it as a string
  * Return: le nombre de caract est affiché
  */
-int print_binary(va_list l, flags_t *f)
+int print_bnary(va_list l, flags_t *f)
 {
 	unsigned int nm = va_arg(l, unsigned int);
 	char *st = cnvert(nm, 2, 0);
@@ -62,7 +62,7 @@ int print_binary(va_list l, flags_t *f)
 }
 
 /**
- * print_octal - printi le nombre dans base octale 8
+ * print_octl - printi le nombre dans base octale 8
  * @l: va_list arguments from _printf
  * @f: pointer to the struct that determines
  * if a flag is passed to _printf
@@ -70,7 +70,7 @@ int print_binary(va_list l, flags_t *f)
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-int print_octal(va_list l, flags_t *f)
+int print_octl(va_list l, flags_t *f)
 {
 	unsigned int nm = va_arg(l, unsigned int);
 	char *st = cnvert(nm, 8, 0);
