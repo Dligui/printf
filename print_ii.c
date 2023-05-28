@@ -23,7 +23,7 @@ int print_iint(va_list l, flags_t *f)
 }
 
 /**
- * print_unsigned - printi lina an unsigned integer
+ * print_unsiigned - printi lina an unsigned integer
  * @l: va_list of arguments from _printf
  * @f: pointer to the struct flags determining
  * if a flag is passed to _printf
@@ -39,7 +39,7 @@ int print_unsiigned(va_list l, flags_t *f)
 }
 
 /**
- * print_number - hadi is a helper function that loops through
+ * priint_number - hadi is a helper function that loops through
  * an integer and prints all its digits
  * @n: integer to be printed
  */
@@ -61,7 +61,7 @@ void priint_number(int n)
 }
 
 /**
- * count_digit - returni the number of digits in an integer
+ * count_diigit - returni the number of digits in an integer
  * for _printf
  * @i: integer to evaluate
  * Return: number of digits
