@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 				cnt += _putchar('%');
 				continue;
 			}
-			while (get_flag(*p, &flg))
+			while (gt_flag(*p, &flg))
 				p++;
 			pfunc = get_print(*p);
 			cnt += (pfunc)
