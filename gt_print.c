@@ -18,11 +18,11 @@ int (*gt_print(char s))(va_list, flags_t *)
 		{'X', print_hex_big},
 		{'b', print_bnary},
 		{'o', print_octl},
-		{'R', print_rot13},
-		{'r', print_rev},
-		{'S', print_bigS},
+		{'R', print_rt13},
+		{'r', print_rv},
+		{'S', print_bgS},
 		{'p', print_adress},
-		{'%', print_percent}
+		{'%', print_prcent}
 		};
 	int flg = 14;
 
